@@ -1,0 +1,271 @@
+html{
+    scroll-behavior: smooth;
+    
+}
+section{
+    /* border-bottom: solid 2px lightgray; */
+    margin: 10px 0 30px 0;
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+    padding-top: 60px;
+}
+
+a{
+    color:#46637b;
+    cursor: pointer;
+}
+
+.card{
+    border:none;
+}
+
+
+
+.card-img-top{
+    width:10rem!important;
+    
+}
+
+.card-title, .service-modal-title{
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.logo {
+    color:#46637b;
+    font-size: 30px!important;
+
+
+}
+.logo a:hover{
+    color: #7eaea2;
+    text-decoration:none;
+    font-size: 30px;
+
+    
+}
+.navbar{
+    /* font-family: 'Noto Sans JP', sans-serif; */
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    font-size: 25px;
+    text-transform: uppercase;
+    /* height: 75px; */
+}
+
+.intro{
+    position: relative;
+}
+
+.intro-title, .intro-text{
+    object-fit:cover;
+}
+
+.intro-img{
+    width:100%;
+    max-height:850px;
+    object-fit:cover;
+   
+}
+
+.intro-title{
+    font-weight: 400;
+    text-shadow:5px 2px 10px black;
+    font-size: 34px;
+}
+
+.intro-text{
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-shadow:5px 2px 10px black;
+    font-size: 42px;
+        
+}
+
+.contactus-nav {
+    color: white;
+    font-size: 25px;
+    padding:0 10px;
+    margin:0px!important;
+    text-transform: uppercase;
+
+}
+
+.contactus-nav a:hover{
+    text-decoration: none;
+    color: white!important; 
+    
+}
+
+.nav-item a:hover{
+    color: #a4c7bf!important;
+}
+
+.nav-item{
+    margin: 0 5px;
+
+}
+
+h1{
+    padding:25px 0;
+    /* margin:20px 0; */
+    font-size:43px;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-transform: uppercase;
+
+}
+
+.work{
+    padding-bottom: 20px;
+}
+
+.work-img{
+    width: 350px;
+    height:350px;
+    margin: 7px;
+    cursor: pointer;
+    object-fit:cover;
+}
+
+.modal-img{
+    width:100%;
+}
+
+
+
+.about-us{
+    color: white;
+   
+}
+
+.about-us-title{
+    font-family: 'Noto Sans JP', sans-serif;
+
+}
+
+.about-us-text{
+    font-size: 18px;
+}
+
+
+@media screen and (max-width:680px){
+    .about-us-left{
+        display: none;
+    }
+    .about-us-img{
+        display:none;
+    }
+
+    .intro-text{
+        font-size: 30px;
+    }
+
+    .intro-title{
+        font-size:20px;
+    }
+
+    h1{
+        font-size:35px;
+    }
+}
+
+.intro-btn{
+    font-size:30px;
+}
+
+.contactus{
+    min-height:450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/contact4.jpg");
+    background-repeat: no-repeat;
+    background-position: left;
+    margin:0px;
+    
+    color: white;
+}
+
+.contactus-right{
+    padding-bottom: 15px;
+}
+.message-send{
+    font-family: 'Jost', sans-serif;
+    text-transform: uppercase;
+    font-size: 22px;
+}
+
+.contactus-text-left{
+    padding-top: 15px;
+    font-family: 'Jost', sans-serif;
+
+}
+
+.email, .telephone{
+    /* font-family: 'Jost', sans-serif; */
+font-family: 'Noto Sans JP', sans-serif;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-size: 35px;
+}
+
+.email-text, .telephone-text{
+    font-family: 'Jost', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+}
+
+.contactus-details{
+    position: absolute;
+    bottom:100px;
+}
+
+.contactus-icon{
+    max-height: 100px;
+    width:auto;
+    filter:invert(100%)
+} 
+
+.message-title {
+    font-family: 'Jost', sans-serif;
+    /* font-family: 'Noto Serif', serif; */
+
+    color: #46637b;
+    text-transform: uppercase;
+    font-weight: 400;
+    padding: 15px;
+}
+
+.services{
+    min-height: 550px;
+}
+
+
+/* .services-title{
+     font-weight: 700;
+} */
+
+
+::placeholder {
+    font-family: 'Jost', sans-serif!important;
+    color: #b0c2c4!important;
+    text-transform: uppercase!important;
+  }
+  
+  :-ms-input-placeholder { /* Internet Explorer 10-11 */
+    font-family: 'Jost', sans-serif!important;
+    color: #b0c2c4!important;
+    text-transform: uppercase!important;
+  }
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    font-family: 'Jost', sans-serif!important;
+    color: #b0c2c4!important;
+    text-transform: uppercase!important;
+}
+
+
+textarea{
+    resize:none;
+}
+
+ 
+
+  
