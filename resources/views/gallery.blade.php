@@ -63,21 +63,29 @@
                     
             @endforelse
             <!-- Modal -->
-                                 
             <div class="modal fade" id="photomodal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered modal-xl" role="document">
-                    <div class="modal-body">
-                        <div id="myCarousel" class="carousel slide carousel-fade" data-interval="false">
-                            <!-- Carousel -->
-                            <div class="carousel-inner" >
-                            @foreach($images as $image)
-                                 <div class="carousel-item {{ $loop->first ? 'active' : '' }} " >
-                                    <img src="{{ Voyager::image($image->image) }}" class="modalImg" alt="no photo #{{$image->id}}">
+                <div class="galleryImg modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content bg-transparent border-0">
+                        <!-- <div class="modal-header border-0 align-self-start">
+                            <button type="button" class="close btn-light" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div> -->
+                            <div class="modal-body">
+                                <div id="myCarousel" class="carousel slide carousel-fade" data-interval="false">
+                                    <!-- Carousel -->
+                                    <div class="carousel-inner" >
+                                    
+                                    @foreach($images as $image)
+                                    
+                                        <div class="carousel-item {{ $loop->first ? 'active' : '' }} " >
+                                            <img src="{{ Voyager::image($image->image) }}" class="modalImg" alt="no photo #{{$image->id}}">
+                                        </div>
+                                    @endforeach
+                                        
+                                    </div>
                                 </div>
-                             @endforeach
-                                
                             </div>
-                        </div>
                     </div>
                 </div>
                 <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
@@ -89,6 +97,7 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+
         </div>
     </div> 
 {{ $images->links() }}
