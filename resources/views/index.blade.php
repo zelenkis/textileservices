@@ -66,7 +66,7 @@
                 <h1 class="services-title text-center" >Servicii</h1>
                 <div class="row justify-content-around">
                     <!-- CARD DESIGN -->
-                    <div class="card  border-0" style="width: 16rem; padding-bottom:10px;">
+                    <div class="card border-0" style="width: 16rem; padding-bottom:10px;">
                         <img src="img/design.png" class="card-img-top mx-auto" alt="...">
                         <div class="card-body ">
                             <h5 class="card-title text-center">Design</h5>
@@ -79,7 +79,7 @@
                                 </li>
                             <div class="mybtn d-flex justify-content-center">
                                 <button type="button" class="btn btn-outline-info rounded-0" data-toggle="modal"
-                                    data-target="#tailoringModal">Detalii</button>
+                                    data-target="#designModal">Detalii</button>
                             </div>
                             </p>
                         </div>
@@ -178,7 +178,7 @@
                                 
                             <div class="mybtn d-flex justify-content-center">
                                 <button type="button" class="btn btn-outline-info rounded-0" data-toggle="modal"
-                                    data-target="#tailoringModal">Detalii</button>
+                                    data-target="#installModal">Detalii</button>
                             </div>
                             </p>
                         </div>
@@ -227,7 +227,7 @@
                                 </li>
                             <div class="mybtn d-flex justify-content-center">
                                 <button type="button" class="btn btn-outline-info rounded-0" data-toggle="modal"
-                                    data-target="#tailoringModal">Detalii</button>
+                                    data-target="#cleanModal">Detalii</button>
                             </div>
                             </p>
                         </div>
@@ -240,7 +240,7 @@
                         <div class="modal-dialog modal-dialog modal-dialog-centered" role="document">
                             <div class="modal-content rounded-0">
                                 <div class="modal-header d-flex align-items-center">
-                                    <h5 class="modal-title service-modal-title ml-auto" id="exampleModalScrollableTitle">Curatare</h5>
+                                    <h5 class="modal-title service-modal-title ml-auto" id="exampleModalScrollableTitle">Curățare</h5>
                                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                                         <span aria-hidden="true">&times;</span>
                                     </button>
@@ -274,7 +274,7 @@
                                 </li>
                             <div class="mybtn d-flex justify-content-center">
                                 <button type="button" class="btn btn-outline-info rounded-0" data-toggle="modal"
-                                    data-target="#tailoringModal">Detalii</button>
+                                    data-target="#repairModal">Detalii</button>
                             </div>
                             </p>
                         </div>
