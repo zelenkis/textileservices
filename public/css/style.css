@@ -1,230 +1,271 @@
-html{
+html {
     scroll-behavior: smooth;
-    
 }
-section{
+
+section {
     /* border-bottom: solid 2px lightgray; */
     margin: 10px 0 30px 0;
     /* font-family: 'Noto Sans JP', sans-serif; */
-    font-family: 'Roboto', sans-serif;
+    font-family: "Roboto", sans-serif;
     padding-top: 60px;
 }
 
 a{
-    color:#46637b;
+    color: #46637b;
     cursor: pointer;
 }
 
-.card{
-    border:none;
+.card {
+    border: none;
 }
 
-
-
-.card-img-top{
-    width:10rem!important;
-    
+.card-img-top {
+    width: 10rem !important;
 }
 
-.card-title, .service-modal-title{
+.card-title,
+.service-modal-title {
     font-weight: 700;
     font-size: 30px;
 }
 
 .logo {
-    color:#46637b;
-    font-size: 30px!important;
-
-
+    color: #46637b;
+    font-size: 30px !important;
 }
-.logo a:hover{
+.logo a:hover {
     color: #7eaea2;
-    text-decoration:none;
+    text-decoration: none;
     font-size: 30px;
-
-    
 }
-.navbar{
+
+.modal {
+    padding-right: 0px !important;
+}
+
+.navbar {
     /* font-family: 'Noto Sans JP', sans-serif; */
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     /* font-family: 'Roboto', sans-serif; */
     font-size: 25px;
     text-transform: uppercase;
     /* height: 75px; */
 }
 
-.intro{
+.intro {
     position: relative;
 }
 
-.intro-title, .intro-text{
-    object-fit:cover;
+.intro-title,
+.intro-text {
+    object-fit: cover;
 }
 
-.intro-img{
-    width:100%;
-    max-height:850px;
-    object-fit:cover;
-   
+.intro-img {
+    width: 100%;
+    max-height: 850px;
+    object-fit: cover;
 }
 
-.intro-title{
+.intro-title {
     font-weight: 400;
-    text-shadow:5px 2px 10px black;
+    text-shadow: 5px 2px 10px black;
     font-size: 34px;
 }
 
-.intro-text{
-    font-family: 'Roboto', sans-serif;
+.intro-text {
+    font-family: "Roboto", sans-serif;
     font-weight: 700;
-    text-shadow:5px 2px 10px black;
+    text-shadow: 5px 2px 10px black;
     font-size: 42px;
-        
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    opacity: 1 !important;
+}
+
+.carousel-control-next-icon,
+.carousel-control-prev-icon {
+    height: 30px !important;
+    width: 30px !important;
 }
 
 .contactus-nav {
     color: white;
     font-size: 25px;
-    padding:0 10px;
-    margin:0px!important;
+    padding: 0 10px;
+    margin: 0px !important;
     text-transform: uppercase;
-
 }
 
-.contactus-nav a:hover{
+.contactus-nav a:hover {
     text-decoration: none;
-    color: white!important; 
-    
+    color: white !important;
 }
 
-.nav-item a:hover{
-    color: #a4c7bf!important;
+.modal-backdrop {
+    background-color: #031214 !important;
+    opacity: 1;
 }
 
-.nav-item{
+.nav-item a:hover {
+    color: #a4c7bf !important;
+}
+
+.nav-item {
     margin: 0 5px;
-
 }
 
-h1{
-    padding:25px 0;
+h1 {
+    padding: 25px 0;
     /* margin:20px 0; */
-    font-size:43px;
-    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 43px;
+    font-family: "Noto Sans JP", sans-serif;
     text-transform: uppercase;
-
 }
 
-.work{
+.work {
     padding-bottom: 20px;
 }
 
-.work-img{
+.work-img {
     width: 350px;
-    height:350px;
+    height: 350px;
     margin: 7px;
+
     cursor: pointer;
-    object-fit:cover;
+    object-fit: cover;
 }
 
-.modal-img{
-    width:100%;
+.modal-dialog,
+.modal-body,
+.myCarousel,
+.carousel-inner {
+    display: inline-block;
+}
+.carousel-item {
+    position: relative !important;
 }
 
 
+span {
+    color: red;
+    font-size: 50px;
+}
 
-.about-us{
+.modal-btn-close a:hover {
+    background: white;
+    color: black;
+}
+
+.modalImg {
+    max-width: 50vw;
+    min-height: auto;
+}
+
+.mybtn{
+    padding: 15px;
+}
+
+@media (min-width: 576px) {
+    .galleryImg {
+        max-width: 1500px !important;
+        margin-left: 25% !important;
+    }
+}
+
+.about-us {
     color: white;
-   
 }
 
-.about-us-title{
-    font-family: 'Noto Sans JP', sans-serif;
-
+.about-us-title {
+    font-family: "Noto Sans JP", sans-serif;
 }
 
-.about-us-text{
+.about-us-text {
     font-size: 18px;
 }
 
-
-@media screen and (max-width:680px){
-    .about-us-left{
+@media screen and (max-width: 680px) {
+    .about-us-left {
         display: none;
     }
-    .about-us-img{
-        display:none;
+    .about-us-img {
+        display: none;
     }
 
-    .intro-text{
+    .intro-text {
         font-size: 30px;
     }
 
-    .intro-title{
-        font-size:20px;
+    .intro-title {
+        font-size: 20px;
     }
 
-    h1{
-        font-size:35px;
+    h1 {
+        font-size: 35px;
     }
 }
 
-.intro-btn{
-    font-size:30px;
+.intro-btn {
+    font-size: 30px;
 }
 
-.contactus{
-    min-height:450px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("../img/contact4.jpg");
+.contactus {
+    min-height: 450px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)),
+        url("../img/contact4.jpg");
     background-repeat: no-repeat;
     background-position: left;
-    margin:0px;
-    
+    margin: 0px;
+
     color: white;
 }
 
-.contactus-right{
+.contactus-right {
     padding-bottom: 15px;
 }
-.message-send{
-    font-family: 'Jost', sans-serif;
+.message-send {
+    font-family: "Jost", sans-serif;
     text-transform: uppercase;
     font-size: 22px;
 }
 
-.contactus-text-left{
+.contactus-text-left {
     padding-top: 15px;
-    font-family: 'Jost', sans-serif;
-
+    font-family: "Jost", sans-serif;
 }
 
-.email, .telephone{
+.email,
+.telephone {
     /* font-family: 'Jost', sans-serif; */
-font-family: 'Noto Sans JP', sans-serif;
+    font-family: "Noto Sans JP", sans-serif;
     text-transform: uppercase;
     font-weight: 400;
     font-size: 35px;
 }
 
-.email-text, .telephone-text{
-    font-family: 'Jost', sans-serif;
+.email-text,
+.telephone-text {
+    font-family: "Jost", sans-serif;
     font-size: 30px;
     font-weight: 400;
 }
 
-.contactus-details{
+.contactus-details {
     position: absolute;
-    bottom:100px;
+    bottom: 100px;
 }
 
-.contactus-icon{
+.contactus-icon {
     max-height: 100px;
-    width:auto;
-    filter:invert(100%)
-} 
+    width: auto;
+    filter: invert(100%);
+}
 
 .message-title {
-    font-family: 'Jost', sans-serif;
+    font-family: "Jost", sans-serif;
     /* font-family: 'Noto Serif', serif; */
 
     color: #46637b;
@@ -233,39 +274,68 @@ font-family: 'Noto Sans JP', sans-serif;
     padding: 15px;
 }
 
-.services{
-    min-height: 550px;
+.page-item.active, .page-link, .page-item.disabled, .page-link{
+    height: 40px!important;
+    font-size: 20px!important;
+    color: #17a2b8!important;
+}
+.page-item.active .page-link{
+    background-color: #17a2b8!important;
+    color: white!important;
+    border:none!important;
+
+
 }
 
+.services {
+    min-height: 550px;
+}
 
 /* .services-title{
      font-weight: 700;
 } */
 
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+    border: none;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #788486;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #17a2b8;
+}
 
 ::placeholder {
-    font-family: 'Jost', sans-serif!important;
-    color: #b0c2c4!important;
-    text-transform: uppercase!important;
-  }
-  
-  :-ms-input-placeholder { /* Internet Explorer 10-11 */
-    font-family: 'Jost', sans-serif!important;
-    color: #b0c2c4!important;
-    text-transform: uppercase!important;
-  }
-  
-  ::-ms-input-placeholder { /* Microsoft Edge */
-    font-family: 'Jost', sans-serif!important;
-    color: #b0c2c4!important;
-    text-transform: uppercase!important;
+    font-family: "Jost", sans-serif !important;
+    color: #b0c2c4 !important;
+    text-transform: uppercase !important;
 }
 
-
-textarea{
-    resize:none;
+:-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-family: "Jost", sans-serif !important;
+    color: #b0c2c4 !important;
+    text-transform: uppercase !important;
 }
 
- 
+::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-family: "Jost", sans-serif !important;
+    color: #b0c2c4 !important;
+    text-transform: uppercase !important;
+}
 
-  
+textarea {
+    resize: none;
+}

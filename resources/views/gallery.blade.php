@@ -100,7 +100,8 @@
 
         </div>
     </div> 
-{{ $images->links() }}
+    <div class="mybtn d-flex justify-content-center">{{$images->links() }}</div>
+    
 
 </section>
 
