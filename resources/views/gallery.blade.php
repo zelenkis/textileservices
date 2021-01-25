@@ -6,7 +6,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white d-flex bd-highlight mb-0 sticky-top shadow-lg">
     <a class="logo navbar-brand mr-auto p-1 bd-highlight" href="{{ url('/') }}">
-        <img src="img/logo1.png" width="40" height="40" alt="">MV Textile Service</a>
+        <img src="img/logo1.png" width="40" height="40" alt="">Draperie.MD</a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown"
         aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -44,7 +44,7 @@
     </div>
 </nav>
 
-<section>
+<section >
     <div class="container-fluid" id="ourwork">
         <h1 class="text-center">Galerie</h1>
 
@@ -64,45 +64,44 @@
             @endforelse
             <!-- Modal -->
             <div class="modal fade" id="photomodal" tabindex="-1" role="dialog" aria-hidden="true">
-                <div class="galleryImg modal-dialog modal-dialog-centered" role="document">
+                <div class="galleryImg modal-dialog modal-dialog-centered " role="document">
                     <div class="modal-content bg-transparent border-0">
-                        <!-- <div class="modal-header border-0 align-self-start">
-                            <button type="button" class="close btn-light" data-dismiss="modal" aria-label="Close">
-                            <span aria-hidden="true">&times;</span>
+                        <div class="modal-header border-0">
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close" title="Închide">
+                            <span class="closeBtn" aria-hidden="true">&times;</span>
                             </button>
-                        </div> -->
-                            <div class="modal-body">
-                                <div id="myCarousel" class="carousel slide carousel-fade" data-interval="false">
-                                    <!-- Carousel -->
-                                    <div class="carousel-inner" >
-                                    
-                                    @foreach($images as $image)
-                                    
-                                        <div class="carousel-item {{ $loop->first ? 'active' : '' }} " >
-                                            <img src="{{ Voyager::image($image->image) }}" class="modalImg" alt="no photo #{{$image->id}}">
-                                        </div>
-                                    @endforeach
-                                        
+                        </div>
+                        <div class="modal-body">
+                            <div id="myCarousel" class="carousel slide carousel-fade" data-interval="false">
+                                <!-- Carousel -->
+                                <div class="carousel-inner">
+                                
+                                @foreach($images as $image)
+                                
+                                    <div class="carousel-item {{ $loop->first ? 'active' : '' }} " >
+                                        <img src="{{ Voyager::image($image->image) }}" class="modalImg" alt="no photo #{{$image->id}}">
                                     </div>
+
+                                    <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev" title="Precedent">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only" >Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next" title="Următorul">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
+                                @endforeach
+                                    
                                 </div>
                             </div>
+                        </div>
                     </div>
                 </div>
-                <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
             </div>
-
         </div>
     </div> 
-    <div class="mybtn d-flex justify-content-center">{{$images->links() }}</div>
-    
-
+    <div class="mybtn d-flex justify-content-center">
+        {{$images->links() }}
+    </div>
 </section>
-
 @endsection
