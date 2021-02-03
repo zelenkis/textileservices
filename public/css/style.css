@@ -102,6 +102,7 @@ a{
     color: white!important;
     padding: 0 15px;
     text-shadow: 0 0 10px black!important;
+    font-size: 50px;
 
 }
 
@@ -175,11 +176,7 @@ h1 {
 }
 
 
-span {
-    font-size: 50px;
-    
-    
-}
+
 
 .modal-btn-close a:hover {
     background: white;
